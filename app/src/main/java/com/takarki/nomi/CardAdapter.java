@@ -62,21 +62,21 @@ public class CardAdapter extends ArrayAdapter<Card> {
             viewHoler.dateTextView.setText("時間:"+item.date);
             viewHoler.memoTextView.setText(item.memo);
             viewHoler.userTextView.setText(item.user);
-            viewHoler.likeButton.setOnClickListener(new View.OnClickListener(){
-
-                @Override
-                public void onClick(View v){
-                    //item.likeNum++;
-                    //viewHoler.likeTextView.setText(item.likeNum+"Likes");
-                    Log.d("リストが","タップされました");
-                }
-            });
-            viewHoler.iconImageView.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v){
-                    //Toast.makeText(getContext(),item.meaning,Toast.LENGTH_SHORT).show();
-                }
-            });
+//            viewHoler.likeButton.setOnClickListener(new View.OnClickListener(){
+//
+//                @Override
+//                public void onClick(View v){
+//                    //item.likeNum++;
+//                    //viewHoler.likeTextView.setText(item.likeNum+"Likes");
+//                    Log.d("リストが","タップされました");
+//                }
+//            });
+//            viewHoler.iconImageView.setOnClickListener(new View.OnClickListener(){
+//                @Override
+//                public void onClick(View v){
+//                    //Toast.makeText(getContext(),item.meaning,Toast.LENGTH_SHORT).show();
+//                }
+//            });
 
         }
 
@@ -88,7 +88,7 @@ public class CardAdapter extends ArrayAdapter<Card> {
         TextView titleTextView;
         TextView dateTextView;
         TextView contentTextView;
-        ImageView likeButton;
+        //ImageView likeButton;
         TextView memoTextView;
         TextView stateTextView;
         TextView userTextView;
@@ -101,7 +101,7 @@ public class CardAdapter extends ArrayAdapter<Card> {
             dateTextView = (TextView)view.findViewById(R.id.like_textView);
             contentTextView = (TextView)view.findViewById(R.id.localText);
             memoTextView = (TextView)view.findViewById(R.id.memoText);
-            userTextView = (TextView)view.findViewById(R.id.userName);
+            userTextView = (TextView)view.findViewById(R.id.nameText);
         }
     }
 

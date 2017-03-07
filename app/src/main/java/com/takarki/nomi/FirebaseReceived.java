@@ -45,7 +45,6 @@ public class FirebaseReceived {
     String date;
     String local;
     String memo;
-
     String adana;
 
     //読み取り終了時に『終わったよ』と知らせてほしいのでインスタンス生成する

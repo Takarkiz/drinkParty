@@ -5,6 +5,7 @@ import android.app.job.JobScheduler;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,6 +33,8 @@ public class AddActivity extends AppCompatActivity {
         dateText = (EditText) findViewById(R.id.dateEdit);
         placeText = (EditText)findViewById(R.id.editText4);
         memoText = (EditText)findViewById(R.id.editText5);
+
+        Log.d("ユーザー名:" ,mfire.user.getDisplayName());
     }
 
     //度数を示すeditのテキストをタップした時
