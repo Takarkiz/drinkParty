@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602059724335",
+    "firebase_url": "https://nomikai-174c1.firebaseio.com",
+    "project_id": "nomikai-174c1",
+    "storage_bucket": "nomikai-174c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602059724335:android:6b17240456c38c7d",
+        "android_client_info": {
+          "package_name": "com.takarki.nomi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602059724335-h31pmro2a71rg3f1aik3k7ivd3jqspq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.takarki.nomi",
+            "certificate_hash": "1aadb2772870ad3298f8f691011f2015b6785fa5"
+          }
+        },
+        {
+          "client_id": "602059724335-bepaottie074g0ooimat5ronhcc29g8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlpqJnp_1CzmHG5wmPlGlSjgRNcLYQ-wA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602059724335-bepaottie074g0ooimat5ronhcc29g8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -10,4 +10,115 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.takarki.nomi.AddActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+        <!--イベントタイトルの設定-->
+        <TextView
+            android:text="イベント名"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="未記入"
+            android:ems="10"
+            android:id="@+id/nameEditText"
+            android:layout_weight="1" />
+
+
+
+
+        <!--どれくらい飲みたいのか指数-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="飲みたさ(必須)"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="未入力"
+            android:ems="10"
+            android:id="@+id/nomiEdit"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="nomiStateEdit"/>
+
+
+
+
+        <!--日時の設定-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日時"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="未定"
+            android:ems="10"
+            android:id="@+id/dateEdit"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_height="41dp"
+            android:clickable="true"
+            android:onClick="dateDialog"/>
+
+
+
+
+        <!--場所の設定-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="場所"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="未定"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_weight="1" />
+
+
+
+
+        <!--メモやメッセージの設定-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="メモ"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:hint="特になし"
+            android:ems="10"
+            android:id="@+id/editText5" />
+
+
+        <Button
+            android:text="登録"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/button2"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="editDone"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
 </RelativeLayout>
