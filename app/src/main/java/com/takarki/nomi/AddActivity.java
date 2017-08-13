@@ -34,7 +34,7 @@ public class AddActivity extends AppCompatActivity {
         placeText = (EditText)findViewById(R.id.editText4);
         memoText = (EditText)findViewById(R.id.editText5);
 
-        Log.d("ユーザー名:" ,mfire.user.getDisplayName());
+        //Log.d("ユーザー名:" ,mfire.user.getDisplayName());
     }
 
     //度数を示すeditのテキストをタップした時

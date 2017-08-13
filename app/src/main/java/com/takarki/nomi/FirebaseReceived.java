@@ -104,4 +104,46 @@ public class FirebaseReceived {
 
 //        return title == null ? "" : title;
     }
+
+    public void searchWord(){
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                DataSnapshot event = dataSnapshot.child("event");
+                for(DataSnapshot child:event.getChildren()){
+//                    if(child.getValue().equals(Integer.toString(0))){
+//                        Log.d("ユーザーidとイベントidの一致","一致しました");
+//                    }
+//                    得られる値とuid(自分のuidもしくは友達の)が等しいとき,
+                    Log.d("探索中","event");
+                    if(child.getKey().equals(uid)){
+                        read2(uid,event);
+
+                    }else if (child.getKey().equals(saveduid)){
+                        read2(saveduid,event);
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void read2(final String xuid,DataSnapshot snapshot){
+        title = snapshot.child(xuid).child("title").getValue(String.class);
+        state = snapshot.child(xuid).child("state").getValue(String.class);
+        date = snapshot.child(xuid).child("date").getValue(String.class);
+        local = snapshot.child(xuid).child("local").getValue(String.class);
+        memo = snapshot.child(xuid).child("memo").getValue(String.class);
+        adana = snapshot.child(xuid).child("user").getValue(String.class);
+        Log.d("読み取りの完了",title);
+
+        //titleを渡す
+        mListener.onReadFinish(title,state,date,local,memo,adana);
+    }
+
+
 }

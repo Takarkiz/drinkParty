@@ -32,13 +32,17 @@ public class MainActivity extends AppCompatActivity implements FirebaseReceived.
         //FirebaseRecivedのリスナーを使いますよ．この画面ですよ．
         mFire.setListener(this);
         //読み込みを開始．
-        mFire.read();
+        mFire.searchWord();
         //mFire.readd(mFire.saveduid);
         //CardAdatperのインスタンスを作成
         mCardAdapter = new CardAdapter(this, R.layout.card, mCards);
 
         //ListViewのsetAdapterメソッドでListViewにCardAdapterを関連付け
         mListView.setAdapter(mCardAdapter);
+
+    }
+
+    public void searchWord(View v){
 
     }
 
